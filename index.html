@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kasus Korupsi di Sekolah Jakarta Utara</title>
+  <link rel="icon" type="image/png" href="favicon.ico">
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
@@ -76,11 +77,16 @@
 
     /* Mobile nav */
     .mobile-menu {
-      display: none;
-      flex-direction: column;
-      background-color: #cc0000;
-      padding: 10px 20px;
-    }
+  display: none;
+  flex-direction: column;
+  background-color: #cc0000;
+  padding: 10px 20px;
+  position: fixed;
+  top: min(15vw, 60px); /* pastikan ini sesuai dengan height navbar */
+  width: 100%;
+  z-index: 10;
+}
+
 
     .mobile-menu a {
       color: white;
